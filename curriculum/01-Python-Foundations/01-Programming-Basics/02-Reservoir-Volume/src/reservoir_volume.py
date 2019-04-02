@@ -12,18 +12,24 @@ def main():
     rainfall = 5e6
 
     # TODO: decrease the rainfall variable by 10% to account for runoff
+    rainfall = rainfall - (rainfall * 0.10)
 
     # TODO: add the rainfall variable to the reservoir_volume variable
+    reservoir_volume = reservoir_volume + rainfall
 
     # TODO: increase reservoir_volume by 5% to account for stormwater that
     # flows into the reservoir in the days following the storm
+    reservoir_volume = reservoir_volume + (reservoir_volume * 0.05)
 
     # TODO: decrease reservoir_volume by 5% to account for evaporation
+    reservoir_volume = reservoir_volume - (reservoir_volume * 0.05)
 
     # TODO: subtract 2.5e5 cubic metres from reservoir_volume to account for
     # water that's piped to arid regions.
+    reservoir_volume = reservoir_volume - 2.5e5
 
     # TODO: print the new value of the reservoir_volume variable
+    print(reservoir_volume)
 
 
 if __name__ == '__main__':
