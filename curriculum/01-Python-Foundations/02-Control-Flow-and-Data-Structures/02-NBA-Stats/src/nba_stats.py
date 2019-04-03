@@ -26,10 +26,14 @@ def main():
     print(f"Best player: {bestPlayer}")
 
     # TODO: print out the list of players ordered by descending points
-    tuples = list(zip(players, points))
-    tri = sorted(tuples, key=lambda tup: tup[1], reverse= True)
-    playersSorted, pointsSorted = zip(*tri)
+    tuplePlayerPoints = list(zip(players, points))
+    triTuple = sorted(tuplePlayerPoints, key=lambda tup: tup[1], reverse=True)
+    playersSorted, pointsSorted = zip(*triTuple)
     print(list(playersSorted))
+
+    # tuplesPlayerPoints sorted(list(zip(points, players)), reverse=True)
+    # sortedPlayers = [t[1] for t in tuplesPlayerPoints]
+    # sortedPlayers = [player for point, player in tuplesPlayerPoints]
 
 if __name__ == '__main__':
     main()
