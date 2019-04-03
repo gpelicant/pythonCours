@@ -8,6 +8,10 @@ def sum_(seq):
     Returns the sum of a sequence
     """
     # TODO: implement this function
+    sumSeq = 0
+    for num in seq:
+        sumSeq += num
+    return sumSeq
 
 
 def mean(seq):
@@ -15,6 +19,13 @@ def mean(seq):
     Returns the mean of a sequence of numbers
     """
     # TODO: implement this function
+    sumSeq = 0
+    i = 0
+    for num in seq:
+        sumSeq += num
+        i += 1
+    averageValue = sumSeq / i
+    return int(averageValue)
 
 
 def median(seq):
@@ -37,6 +48,10 @@ def median(seq):
     2.5
     """
     # TODO: implement this function
+    sortedList = sorted(seq)
+    lenList = len(seq)
+    positionMedian = int(lenList / 2)
+    return sortedList[positionMedian]
 
 
 def mode(seq):
