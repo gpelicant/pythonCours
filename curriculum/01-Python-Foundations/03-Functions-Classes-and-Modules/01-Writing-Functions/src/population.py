@@ -13,3 +13,5 @@ def population_density(population, land_area):
     -------
     a string
     """
+    density = population / land_area
+    return density
