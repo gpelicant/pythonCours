@@ -12,4 +12,4 @@ This quote is actually taken from [here](https://blog.codinghorror.com/why-cant-
 
 
 ## Guidelines
-That's pretty simple, you need to implement a program that will play `Fizz Buzz` from 1 to 100. Print out the numbers from 1 to 100, if the number is divisible by 3, print "Fizz" instead, but if the number if divisible by 5, print "Buzz" instead, and if divisible by both, print "Fizz Buzz".
+That's pretty simple, you need to implement a program that will play `Fizz Buzz` from 1 to 100. Print out the numbers from 1 to 100, if the number is divisible by 3, print "Fizz" instead, but if the number is divisible by 5, print "Buzz" instead, and if divisible by both, print "Fizz Buzz".
