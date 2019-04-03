@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # TODO: Write a docstring
-
+"""
+text processing poupipoupipoupipou
+"""
 
 STOPWORDS = {
     'ourselves', 'hers', 'between', 'yourself', 'but', 'again', 'there',
@@ -28,15 +30,18 @@ def main():
 
     # TODO: Split your string into a list of words: tokens
     #       Then print out the result
-
+    tokens = sentence.split(" ")
+    print(tokens)
     # TODO: Lowercase each token of tokens: lowercase_tokens
     #       Do this using a list comprehension
     #       Then print out the result
-
+    lowercase_tokens = [token.lower() for token in tokens]
+    print(lowercase_tokens)
     # TODO: Remove stopwords from this list: no_stops
     #       Use a list comprehension
     #       Then print out the result
-
+    no_stops = [token for token in lowercase_tokens if token not in STOPWORDS]
+    print(no_stops)
 
 if __name__ == '__main__':
     main()
